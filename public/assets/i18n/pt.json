@@ -1,10 +1,52 @@
 {
-    "APP": {
-        "TITLE": "Sistema de Gerenciamento de Tripulação"
-    },
-    "CREW": {
-        "FIRST_NAME": "Primeiro Nome",
-        "LAST_NAME": "Sobrenome",
-        "NATIONALITY": "Nacionalidade"
-    }
+  "APP": {
+    "TITLE": "Sistema de Gestão de Tripulação"
+  },
+  "COMMON": {
+    "ADD": "Adicionar",
+    "EDIT": "Editar",
+    "DELETE": "Excluir",
+    "CANCEL": "Cancelar",
+    "SAVE": "Salvar",
+    "DISCOUNT": "Desconto",
+    "TOTAL_INCOME": "Rendimento total",
+    "CURRENCY": "Moeda",
+    "ACTIONS": "Ações",
+    "VIEW": "Visualizar"
+  },
+  "CREW": {
+    "FIRST_NAME": "Nome",
+    "LAST_NAME": "Sobrenome",
+    "NATIONALITY": "Nacionalidade",
+    "TITLE": "Cargo",
+    "DAYS_ON_BOARD": "Dias a bordo",
+    "DAILY_RATE": "Taxa diária"
+  },
+  "CERTIFICATE": {
+    "TYPE": "Tipo de certificado",
+    "ISSUE_DATE": "Data de emissão",
+    "EXPIRY_DATE": "Data de validade"
+  },
+  "CERTIFICATE_TYPE": {
+    "ADD": "Adicionar tipo de certificado",
+    "ADD_NEW": "Adicionar novo tipo de certificado",
+    "NAME": "Nome",
+    "DESCRIPTION": "Descrição",
+    "LIST": "Tipos de certificado",
+    "EDIT": "Editar tipo de certificado",
+    "DELETE": "Excluir tipo de certificado",
+    "DELETE_CONFIRM": "Tem certeza de que deseja excluir este tipo de certificado?"
+  },
+  "VALIDATION": {
+    "REQUIRED": "Este campo é obrigatório",
+    "MIN_LENGTH": "O comprimento mínimo é de {{length}} caracteres"
+  },
+  "TABS": {
+    "CARD": "Cartão",
+    "CERTIFICATES": "Certificados"
+  },
+  "PAGE": {
+    "NO_CERTIFICATES": "Nenhum certificado disponível.",
+    "TOTAL_INCOME_BY_CURRENCY": "Rendimento total por moeda"
+  }
 }

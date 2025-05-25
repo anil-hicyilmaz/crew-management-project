@@ -2,9 +2,52 @@
   "APP": {
     "TITLE": "Crew Management System"
   },
+  "COMMON": {
+    "ADD": "Add",
+    "EDIT": "Edit",
+    "DELETE": "Delete",
+    "CANCEL": "Cancel",
+    "SAVE": "Save",
+    "DISCOUNT": "Discount",
+    "TOTAL_INCOME": "Total Income",
+    "CURRENCY": "Currency",
+    "ACTIONS": "Actions",
+    "VIEW": "View"
+  },
   "CREW": {
     "FIRST_NAME": "First Name",
     "LAST_NAME": "Last Name",
-    "NATIONALITY": "Nationality"
+    "NATIONALITY": "Nationality",
+    "TITLE": "Title",
+    "DAYS_ON_BOARD": "Days on Board",
+    "DAILY_RATE": "Daily Rate"
+  },
+  "CERTIFICATE": {
+    "TYPE": "Certificate Type",
+    "ISSUE_DATE": "Issue Date",
+    "EXPIRY_DATE": "Expiry Date"
+  },
+  "CERTIFICATE_TYPE": {
+    "ADD": "Add Certificate Type",
+    "ADD_NEW": "Add New Certificate Type",
+    "NAME": "Name",
+    "DESCRIPTION": "Description",
+    "LIST": "Certificate Types",
+    "EDIT": "Edit Certificate Type",
+    "DELETE": "Delete Certificate Type",
+    "DELETE_CONFIRM": "Are you sure you want to delete this certificate type?"
+  },
+  "VALIDATION": {
+    "REQUIRED": "This field is required",
+    "MIN_LENGTH": "Minimum length is {{length}} characters"
+  },
+  "TABS": {
+    "CARD": "Card",
+    "CERTIFICATES": "Certificates"
+  },
+  "PAGE": {
+    "NO_CERTIFICATES": "This crew member has no certificates.",
+    "TOTAL_INCOME_BY_CURRENCY": "Total Income per Currency"
+
   }
 }

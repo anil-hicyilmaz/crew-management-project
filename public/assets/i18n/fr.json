@@ -2,9 +2,51 @@
   "APP": {
     "TITLE": "Système de gestion d'équipage"
   },
+  "COMMON": {
+    "ADD": "Ajouter",
+    "EDIT": "Modifier",
+    "DELETE": "Supprimer",
+    "CANCEL": "Annuler",
+    "SAVE": "Enregistrer",
+    "DISCOUNT": "Remise",
+    "TOTAL_INCOME": "Revenu total",
+    "CURRENCY": "Devise",
+    "ACTIONS": "Actions",
+    "VIEW": "Voir"
+  },
   "CREW": {
     "FIRST_NAME": "Prénom",
     "LAST_NAME": "Nom",
-    "NATIONALITY": "Nationalité"
+    "NATIONALITY": "Nationalité",
+    "TITLE": "Fonction",
+    "DAYS_ON_BOARD": "Jours à bord",
+    "DAILY_RATE": "Taux journalier"
+  },
+  "CERTIFICATE": {
+    "TYPE": "Type de certificat",
+    "ISSUE_DATE": "Date d'émission",
+    "EXPIRY_DATE": "Date d'expiration"
+  },
+  "CERTIFICATE_TYPE": {
+    "ADD": "Ajouter un type de certificat",
+    "ADD_NEW": "Ajouter un nouveau type de certificat",
+    "NAME": "Nom",
+    "DESCRIPTION": "Description",
+    "LIST": "Types de certificats",
+    "EDIT": "Modifier le type de certificat",
+    "DELETE": "Supprimer le type de certificat",
+    "DELETE_CONFIRM": "Êtes-vous sûr de vouloir supprimer ce type de certificat ?"
+  },
+  "VALIDATION": {
+    "REQUIRED": "Ce champ est requis",
+    "MIN_LENGTH": "La longueur minimale est de {{length}} caractères"
+  },
+  "TABS": {
+    "CARD": "Fiche",
+    "CERTIFICATES": "Certificats"
+  },
+  "PAGE": {
+    "NO_CERTIFICATES": "Aucun certificat disponible.",
+    "TOTAL_INCOME_BY_CURRENCY": "Revenu total par devise"
   }
 }

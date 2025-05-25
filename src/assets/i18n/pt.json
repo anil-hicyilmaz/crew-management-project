@@ -1,0 +1,10 @@
+{
+    "APP": {
+        "TITLE": "Sistema de Gerenciamento de Tripulação"
+    },
+    "CREW": {
+        "FIRST_NAME": "Primeiro Nome",
+        "LAST_NAME": "Sobrenome",
+        "NATIONALITY": "Nacionalidade"
+    }
+}

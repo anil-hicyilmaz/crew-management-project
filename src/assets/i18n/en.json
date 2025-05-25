@@ -1,0 +1,10 @@
+{
+  "APP": {
+    "TITLE": "Crew Management System"
+  },
+  "CREW": {
+    "FIRST_NAME": "First Name",
+    "LAST_NAME": "Last Name",
+    "NATIONALITY": "Nationality"
+  }
+}

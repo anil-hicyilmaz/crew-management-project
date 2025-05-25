@@ -1,3 +1,6 @@
 <mat-toolbar color="primary">
-  Crew Management System
+  <h1>{{ 'APP.TITLE' | translate }}</h1>
+  <button mat-button (click)="translate.use('en')">English</button>
+  <button mat-button (click)="translate.use('fr')">French</button>
+  <button mat-button (click)="translate.use('pt')">Portuguese</button>
 </mat-toolbar>

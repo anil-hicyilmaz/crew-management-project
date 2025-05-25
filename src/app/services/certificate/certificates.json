@@ -1,0 +1,32 @@
+[
+  {
+    "id": 101,
+    "typeId": 1,
+    "issueDate": "2023-01-15T00:00:00Z",
+    "expiryDate": "2027-01-15T00:00:00Z"
+  },
+  {
+    "id": 102,
+    "typeId": 2,
+    "issueDate": "2023-02-20T00:00:00Z",
+    "expiryDate": "2027-02-20T00:00:00Z"
+  },
+  {
+    "id": 103,
+    "typeId": 3,
+    "issueDate": "2023-03-10T00:00:00Z",
+    "expiryDate": "2027-03-10T00:00:00Z"
+  },
+  {
+    "id": 104,
+    "typeId": 4,
+    "issueDate": "2023-04-05T00:00:00Z",
+    "expiryDate": "2027-04-05T00:00:00Z"
+  },
+  {
+    "id": 105,
+    "typeId": 5,
+    "issueDate": "2023-05-12T00:00:00Z",
+    "expiryDate": "2027-05-12T00:00:00Z"
+  }
+]

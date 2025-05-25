@@ -1,0 +1,5 @@
+<span *ngFor="let lang of languages" style="margin-right: 8px;">
+    <button (click)="changeLang(lang.code)">
+        {{ lang.label }}
+    </button>
+</span>

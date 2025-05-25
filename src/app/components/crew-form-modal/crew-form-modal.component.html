@@ -1,0 +1,68 @@
+<h2 mat-dialog-title>{{ 'COMMON.ADD' | translate }} Crew</h2>
+<form [formGroup]="crewForm" class="form">
+  <mat-form-field appearance="fill">
+    <mat-label>{{ 'CREW.FIRST_NAME' | translate }}</mat-label>
+    <input matInput formControlName="firstName" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>{{ 'CREW.LAST_NAME' | translate }}</mat-label>
+    <input matInput formControlName="lastName" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>{{ 'CREW.NATIONALITY' | translate }}</mat-label>
+    <mat-select formControlName="nationality">
+      <mat-option *ngFor="let nationality of nationalities" [value]="nationality">
+        {{ nationality }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>{{ 'CREW.TITLE' | translate }}</mat-label>
+    <mat-select formControlName="title">
+      <mat-option *ngFor="let title of titles" [value]="title">
+        {{ title }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>{{ 'CREW.DAYS_ON_BOARD' | translate }}</mat-label>
+    <input matInput type="number" formControlName="daysOnBoard" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>{{ 'CREW.DAILY_RATE' | translate }}</mat-label>
+    <input matInput type="number" formControlName="dailyRate" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>{{ 'COMMON.CURRENCY' | translate }}</mat-label>
+    <mat-select formControlName="currency">
+      <mat-option *ngFor="let currency of currencies" [value]="currency">
+        {{ currency }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>{{ 'COMMON.DISCOUNT' | translate }}</mat-label>
+    <input matInput type="number" formControlName="discount" min="0" max="100" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>{{ 'CREW.CERTIFICATES' | translate }}</mat-label>
+    <mat-select formControlName="certificateIds" multiple>
+      <mat-option *ngFor="let cert of certificates" [value]="cert.id">
+        {{ getCertificateTypeName(cert.typeId) }} ({{ cert.issueDate | date }} - {{ cert.expiryDate | date }})
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="actions">
+    <button mat-button (click)="cancel()">{{ 'COMMON.CANCEL' | translate }}</button>
+    <button mat-raised-button color="primary" (click)="save()">{{ 'COMMON.SAVE' | translate }}</button>
+  </div>
+</form>

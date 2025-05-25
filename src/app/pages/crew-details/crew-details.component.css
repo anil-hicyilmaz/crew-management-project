@@ -1,0 +1,13 @@
+mat-card {
+    margin: 16px 0;
+    padding: 16px;
+}
+
+mat-tab-group {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 16px;
+    color: #333;
+}

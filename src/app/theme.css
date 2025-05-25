@@ -1,0 +1,28 @@
+:root {
+  /* Primary Colors */
+  --primary-cyan: #00BCD4;
+  --primary-cyan-light: #4DD0E1;
+  --primary-cyan-dark: #0097A7;
+  
+  /* Secondary Colors */
+  --secondary-orange: #FF9800;
+  --secondary-orange-light: #FFB74D;
+  --secondary-orange-dark: #F57C00;
+  
+  /* Background Colors */
+  --bg-dark: #263238;
+  --bg-light: #ECEFF1;
+  
+  /* Text Colors */
+  --text-light: #FFFFFF;
+  --text-dark: #37474F;
+  
+  /* Status Colors */
+  --success: #4CAF50;
+  --warning: #FFC107;
+  --error: #F44336;
+  
+  /* Border Colors */
+  --border-light: rgba(0, 0, 0, 0.12);
+  --border-dark: rgba(255, 255, 255, 0.12);
+} 

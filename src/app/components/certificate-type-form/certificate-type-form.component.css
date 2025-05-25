@@ -1,0 +1,42 @@
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--bg-light);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+button[type="submit"] {
+  background: var(--primary-cyan);
+  color: var(--text-light);
+}
+
+button[type="submit"]:hover {
+  background: var(--primary-cyan-dark);
+}
+
+button[type="button"] {
+  color: var(--text-dark);
+}
+
+button[type="button"]:hover {
+  background: rgba(0, 0, 0, 0.04);
+} 

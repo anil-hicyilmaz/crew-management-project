@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "STCW Basic Safety Training",
+    "description": "Basic safety training for all seafarers"
+  },
+  {
+    "id": 2,
+    "name": "Advanced Firefighting",
+    "description": "Advanced fire prevention and firefighting techniques"
+  },
+  {
+    "id": 3,
+    "name": "Medical First Aid",
+    "description": "Medical first aid and emergency care"
+  },
+  {
+    "id": 4,
+    "name": "GMDSS Radio Operator",
+    "description": "Global Maritime Distress and Safety System operation"
+  },
+  {
+    "id": 5,
+    "name": "ECDIS Navigation",
+    "description": "Electronic Chart Display and Information System"
+  }
+] 

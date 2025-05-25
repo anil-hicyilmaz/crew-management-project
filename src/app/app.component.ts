@@ -1,23 +1,46 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
+import { Router, RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+import { MatDialog } from '@angular/material/dialog';
+import { CrewFormModalComponent } from './components/crew-form-modal/crew-form-modal.component';
+import { CrewService } from './services/crew/crew.service';
+import { LanguageSelectorComponent } from './components/language-selector/language-selector.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MatToolbarModule, TranslateModule],
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterModule,
+    TranslateModule,
+    LanguageSelectorComponent
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'crew-management-project';
+  constructor(
+    public router: Router,
+    private dialog: MatDialog,
+    private crewService: CrewService
+  ) {}
 
-  constructor(public translate: TranslateService) {
-    this.translate.addLangs(['en', 'fr', 'pt']);
-    this.translate.setDefaultLang('en');
+  get showAddCrew(): boolean {
+    return this.router.url === '/';
   }
 
-  switchLanguage(lang: string) {
-    this.translate.use(lang);
+  addCrew() {
+    const dialogRef = this.dialog.open(CrewFormModalComponent, {
+      width: '400px',
+      data: null
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        const newCrew = { ...result, id: Date.now(), certificates: [] };
+        this.crewService.addCrew(newCrew);
+      }
+    });
   }
 }

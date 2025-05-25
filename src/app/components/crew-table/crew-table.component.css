@@ -1,0 +1,123 @@
+.table-container {
+  width: 100%;
+  overflow: auto;
+  max-height: calc(100vh - 120px); /* Adjust based on header height */
+  margin: 20px 0;
+  background: var(--bg-light);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  min-width: 800px; /* Minimum width to prevent squishing */
+}
+
+/* Style for sticky header */
+.mat-mdc-header-row {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #1a4a4f;  /* Much darker cyan for better contrast */
+  color: var(--text-light);
+}
+
+.mat-mdc-header-cell {
+  color: var(--text-light);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 12px 16px;
+}
+
+/* Style for table cells */
+.mat-mdc-cell {
+  color: var(--text-dark);
+  padding: 12px 16px;
+}
+
+/* Style for sticky first column (actions) */
+.mat-column-actions {
+  position: sticky;
+  left: 0;
+  background: var(--bg-light);
+  z-index: 2;
+  border-right: 1px solid var(--border-light);
+}
+
+/* Style for table rows */
+.mat-mdc-row {
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.mat-mdc-row:hover {
+  background-color: rgba(0, 188, 212, 0.05);
+}
+
+/* Style for action buttons */
+.mat-mdc-icon-button {
+  color: var(--primary-cyan-dark);
+}
+
+.mat-mdc-icon-button:hover {
+  color: var(--primary-cyan);
+}
+
+/* Style for menu items */
+.mat-mdc-menu-item {
+  color: var(--text-dark);
+}
+
+.mat-mdc-menu-item:hover {
+  background-color: rgba(0, 188, 212, 0.05);
+}
+
+/* Style for input fields */
+input[type="number"] {
+  border: 1px solid var(--border-light);
+  padding: 4px 8px;
+  width: 60px;
+  transition: border-color 0.3s ease;
+  background: var(--text-light);
+  color: var(--text-dark);
+}
+
+input[type="number"]:focus {
+  border-color: var(--primary-cyan);
+  outline: none;
+}
+
+/* Add shadow to indicate scrollable content */
+.table-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 5px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), transparent);
+  pointer-events: none;
+}
+
+/* Style for horizontal scrollbar */
+.table-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: var(--primary-cyan-dark);
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-cyan);
+}
+
+/* Style for vertical scrollbar */
+.table-container::-webkit-scrollbar:vertical {
+  width: 8px;
+}

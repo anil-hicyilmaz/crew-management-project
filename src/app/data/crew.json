@@ -1,0 +1,114 @@
+{
+  "crews": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Smith",
+      "nationality": "USA",
+      "title": "Captain",
+      "daysOnBoard": 180,
+      "dailyRate": 500,
+      "currency": "USD",
+      "certificates": []
+    },
+    {
+      "id": 2,
+      "firstName": "Maria",
+      "lastName": "Garcia",
+      "nationality": "Spain",
+      "title": "Chief Officer",
+      "daysOnBoard": 150,
+      "dailyRate": 450,
+      "currency": "EUR",
+      "certificates": []
+    },
+    {
+      "id": 3,
+      "firstName": "Hans",
+      "lastName": "Müller",
+      "nationality": "Germany",
+      "title": "Chief Engineer",
+      "daysOnBoard": 160,
+      "dailyRate": 480,
+      "currency": "EUR",
+      "certificates": []
+    },
+    {
+      "id": 4,
+      "firstName": "Yuki",
+      "lastName": "Tanaka",
+      "nationality": "Japan",
+      "title": "Second Officer",
+      "daysOnBoard": 120,
+      "dailyRate": 350,
+      "currency": "USD",
+      "certificates": []
+    },
+    {
+      "id": 5,
+      "firstName": "Sophie",
+      "lastName": "Dubois",
+      "nationality": "France",
+      "title": "Electrician",
+      "daysOnBoard": 90,
+      "dailyRate": 300,
+      "currency": "EUR",
+      "certificates": []
+    },
+    {
+      "id": 6,
+      "firstName": "Raj",
+      "lastName": "Patel",
+      "nationality": "India",
+      "title": "Bosun",
+      "daysOnBoard": 100,
+      "dailyRate": 280,
+      "currency": "USD",
+      "certificates": []
+    },
+    {
+      "id": 7,
+      "firstName": "Wei",
+      "lastName": "Chen",
+      "nationality": "China",
+      "title": "Able Seaman",
+      "daysOnBoard": 80,
+      "dailyRate": 250,
+      "currency": "USD",
+      "certificates": []
+    },
+    {
+      "id": 8,
+      "firstName": "James",
+      "lastName": "Wilson",
+      "nationality": "UK",
+      "title": "Cook",
+      "daysOnBoard": 95,
+      "dailyRate": 270,
+      "currency": "GBP",
+      "certificates": []
+    },
+    {
+      "id": 9,
+      "firstName": "Marco",
+      "lastName": "Rossi",
+      "nationality": "Italy",
+      "title": "Steward",
+      "daysOnBoard": 85,
+      "dailyRate": 260,
+      "currency": "EUR",
+      "certificates": []
+    },
+    {
+      "id": 10,
+      "firstName": "Alex",
+      "lastName": "Papadopoulos",
+      "nationality": "Greece",
+      "title": "Ordinary Seaman",
+      "daysOnBoard": 70,
+      "dailyRate": 230,
+      "currency": "EUR",
+      "certificates": []
+    }
+  ]
+} 

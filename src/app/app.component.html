@@ -1,6 +1,19 @@
-<mat-toolbar color="primary">
-  <h1>{{ 'APP.TITLE' | translate }}</h1>
-  <button mat-button (click)="translate.use('en')">English</button>
-  <button mat-button (click)="translate.use('fr')">French</button>
-  <button mat-button (click)="translate.use('pt')">Portuguese</button>
-</mat-toolbar>
+<header class="header">
+  <div class="header-left">
+    <div class="app-title">{{ 'APP.TITLE' | translate }}</div>
+    <!-- Add Crew button (visible only on home page) -->
+    <ng-container *ngIf="showAddCrew">
+      <button mat-stroked-button color="accent" class="add-crew-button" (click)="addCrew()">
+        {{ 'COMMON.ADD' | translate }} Crew
+      </button>
+    </ng-container>
+    <button mat-raised-button color="primary" class="add-crew-button" routerLink="/certificate-types/new">
+      {{ 'CERTIFICATE_TYPE.ADD' | translate }}
+    </button>
+  </div>
+
+  <!-- Language Selector -->
+  <app-language-selector></app-language-selector>
+</header>
+
+<router-outlet></router-outlet>

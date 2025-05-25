@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "firstName": "Liam",
+        "lastName": "Anderson",
+        "nationality": "Canada",
+        "title": "Captain",
+        "daysOnBoard": 145,
+        "dailyRate": 320,
+        "currency": "USD",
+        "discount": 30,
+        "certificateIds": [
+            101,
+            102,
+            105
+        ]
+    },
+    {
+        "id": 2,
+        "firstName": "Sophia",
+        "lastName": "Martinez",
+        "nationality": "Mexico",
+        "title": "Engineer",
+        "daysOnBoard": 98,
+        "dailyRate": 290,
+        "currency": "EUR",
+        "certificateIds": [
+            103,
+            104
+        ]
+    },
+    {
+        "id": 3,
+        "firstName": "Hiroshi",
+        "lastName": "Tanaka",
+        "nationality": "Japan",
+        "title": "Mechanic",
+        "daysOnBoard": 120,
+        "dailyRate": 250,
+        "currency": "USD",
+        "certificateIds": []
+    },
+    {
+        "id": 4,
+        "firstName": "Emma",
+        "lastName": "Schneider",
+        "nationality": "Germany",
+        "title": "Cooker",
+        "daysOnBoard": 80,
+        "dailyRate": 200,
+        "currency": "EUR",
+        "certificateIds": [
+            101
+        ]
+    },
+    {
+        "id": 5,
+        "firstName": "Noah",
+        "lastName": "Lee",
+        "nationality": "South Korea",
+        "title": "Engineer",
+        "daysOnBoard": 110,
+        "dailyRate": 270,
+        "currency": "USD",
+        "discount": 15,
+        "certificateIds": [
+            102,
+            103
+        ]
+    }
+]

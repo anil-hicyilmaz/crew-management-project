@@ -1,0 +1,120 @@
+.header {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.app-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-light);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.add-crew-button {
+  margin-left: 10px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--primary-cyan);
+  color: var(--text-light);
+  background: var(--primary-cyan);
+}
+
+.add-crew-button:hover {
+  background: var(--primary-cyan-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for language selector buttons */
+:host ::ng-deep app-language-selector button {
+  background: transparent;
+  border: 1px solid var(--secondary-orange);
+  color: var(--text-light);
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 8px;
+}
+
+:host ::ng-deep app-language-selector button:hover {
+  background: var(--secondary-orange);
+  border-color: var(--secondary-orange-dark);
+  transform: translateY(-1px);
+}
+
+:host ::ng-deep app-language-selector button.active {
+  background: var(--secondary-orange);
+  border-color: var(--secondary-orange-dark);
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-left {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .app-title {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .add-crew-button {
+    margin: 5px 0;
+  }
+
+  :host ::ng-deep app-language-selector {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  :host ::ng-deep app-language-selector button {
+    margin: 0 4px;
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 8px;
+  }
+
+  .app-title {
+    font-size: 14px;
+  }
+
+  .add-crew-button {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  :host ::ng-deep app-language-selector button {
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+}

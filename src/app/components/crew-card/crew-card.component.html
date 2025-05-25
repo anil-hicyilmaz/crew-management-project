@@ -1,0 +1,59 @@
+<div class="crew-card">
+  <div class="crew-header">
+    <div>
+      <div class="crew-name">{{crew.firstName}} {{crew.lastName}}</div>
+      <div class="crew-title">{{crew.title}}</div>
+    </div>
+    <div class="crew-actions">
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="action-button">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="onEdit()">
+          <mat-icon>edit</mat-icon>
+          <span>{{ 'CREW.EDIT' | translate }}</span>
+        </button>
+        <button mat-menu-item (click)="onDelete()">
+          <mat-icon>delete</mat-icon>
+          <span>{{ 'CREW.DELETE' | translate }}</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+
+  <div class="crew-details">
+    <div class="detail-item">
+      <span class="detail-label">{{ 'CREW.NATIONALITY' | translate }}</span>
+      <span class="detail-value">{{crew.nationality}}</span>
+    </div>
+    <div class="detail-item">
+      <span class="detail-label">{{ 'CREW.DAYS_ON_BOARD' | translate }}</span>
+      <span class="detail-value">{{crew.daysOnBoard}}</span>
+    </div>
+    <div class="detail-item">
+      <span class="detail-label">{{ 'CREW.DAILY_RATE' | translate }}</span>
+      <span class="detail-value">{{crew.dailyRate}} {{crew.currency}}</span>
+    </div>
+    <div class="detail-item">
+      <span class="detail-label">{{ 'CREW.DISCOUNT' | translate }}</span>
+      <span class="detail-value">{{crew.discount}}%</span>
+    </div>
+    <div class="detail-item">
+      <span class="detail-label">{{ 'CREW.TOTAL_INCOME' | translate }}</span>
+      <span class="detail-value">{{calculateTotalIncome()}} {{crew.currency}}</span>
+    </div>
+  </div>
+
+  <div class="certificates-section" *ngIf="crew.certificates?.length">
+    <div class="certificates-title">{{ 'CREW.CERTIFICATES' | translate }}</div>
+    <div class="certificate-list">
+      <div class="certificate-item" *ngFor="let certificate of crew.certificates">
+        <div class="certificate-name">{{certificate.type.name}}</div>
+        <div class="certificate-details">
+          <div>{{ 'CREW.CERTIFICATE.ISSUE_DATE' | translate }}: {{certificate.issueDate | date}}</div>
+          <div>{{ 'CREW.CERTIFICATE.EXPIRY_DATE' | translate }}: {{certificate.expiryDate | date}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
